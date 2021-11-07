@@ -1,5 +1,5 @@
 FROM archlinux
-RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+#RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 RUN cat /etc/locale.gen
 RUN locale-gen
 RUN pacman -Syyu
