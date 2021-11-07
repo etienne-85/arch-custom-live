@@ -1,4 +1,5 @@
 FROM archlinux
+RUN pacman -Syyu
 RUN pacman -S --needed sudo vim zsh git base-devel htop
 # RUN pacman -S zip unzip bash-completion \
 #        build-essential ninja-build jq software-properties-common \
