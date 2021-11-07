@@ -2,7 +2,7 @@ FROM archlinux
 #RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 RUN locale-gen
 RUN echo "LANG=en_US.UTF-8" >> /etc/locale.conf
-RUN pacman -Syyu
+RUN pacman-db-upgrade && pacman -Syyu
 RUN pacman -S --needed sudo vim zsh git base-devel htop
 # RUN pacman -S zip unzip bash-completion \
 #        build-essential ninja-build jq software-properties-common \
