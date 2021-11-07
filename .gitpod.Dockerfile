@@ -1,4 +1,27 @@
 FROM archlinux
+RUN pacman -S --needed git base-devel \
+        zip \
+        unzip \
+        bash-completion \
+        build-essential \
+        # ninja-build \
+        htop \
+        jq \
+        less \
+        locales \
+        man-db \
+        nano \
+        ripgrep \
+        # software-properties-common \
+        sudo \
+        time \
+        emacs-nox \
+        vim \
+        multitail \
+        lsof \
+        ssl-cert \
+        fish \
+        zsh \
 ### Gitpod user ###
 # '-l': see https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod \
