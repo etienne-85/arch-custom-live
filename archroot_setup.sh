@@ -7,4 +7,4 @@ sudo mount --bind /tmp/root.x86_64 /tmp/root.x86_64
 sudo mount -t proc /proc proc
 sudo mount --make-rslave --rbind /sys sys
 sudo mount --make-rslave --rbind /dev dev
-echo "Server = http://mir.archlinux.fr/\$repo/os/\$arch" | sudo tee -a root.x86_64/etc/pacman.d/mirrorlist
+echo "Server = http://mir.archlinux.fr/\$repo/os/\$arch" | sudo tee -a etc/pacman.d/mirrorlist
