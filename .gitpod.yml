@@ -1,1 +1,2 @@
-image: gitpod/workspace-base
+image: # archlinux
+  file: .gitpod.Dockerfile
