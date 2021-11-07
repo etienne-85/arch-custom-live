@@ -1,27 +1,8 @@
 FROM archlinux
-RUN pacman -S --needed git base-devel \
-        zip \
-        unzip \
-        bash-completion \
-        build-essential \
-        # ninja-build \
-        htop \
-        jq \
-        less \
-        locales \
-        man-db \
-        nano \
-        ripgrep \
-        # software-properties-common \
-        sudo \
-        time \
-        emacs-nox \
-        vim \
-        multitail \
-        lsof \
-        ssl-cert \
-        fish \
-        zsh 
+RUN pacman -S --needed sudo vim zsh git base-devel htop
+# RUN pacman -S zip unzip bash-completion \
+#        build-essential ninja-build jq software-properties-common \
+#        less locales man-db nano ripgrep time emacs-nox multitail lsof ssl-cert fish 
         
 ### Gitpod user ###
 # '-l': see https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user
