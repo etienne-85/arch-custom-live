@@ -8,3 +8,4 @@ sudo mount -t proc /proc proc
 sudo mount --make-rslave --rbind /sys sys
 sudo mount --make-rslave --rbind /dev dev
 echo "Server = http://mir.archlinux.fr/\$repo/os/\$arch" | sudo tee -a etc/pacman.d/mirrorlist
+sudo chroot /tmp/root.x86_64 /bin/bash
