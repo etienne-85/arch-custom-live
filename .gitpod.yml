@@ -6,7 +6,7 @@ workspaceLocation: "."
 tasks:
   - name: archroot setup
     init: |
-    # wget https://raw.githubusercontent.com/etienne1911/arch-custom-live/main/archroot_setup.sh
       cd repo
       chmod +x archroot_setup.sh
     command: ./archroot_setup.sh
+ # wget https://raw.githubusercontent.com/etienne1911/arch-custom-live/main/archroot_setup.sh
