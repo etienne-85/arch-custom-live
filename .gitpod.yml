@@ -1,2 +1,12 @@
-image: # archlinux
-  file: .gitpod.Dockerfile
+# image: # archlinux
+#  file: .gitpod.Dockerfile
+checkoutLocation: "./repo"
+workspaceLocation: "."
+# Commands to start on workspace startup
+tasks:
+  - name: archroot setup
+    init: |
+    # wget https://raw.githubusercontent.com/etienne1911/arch-custom-live/main/archroot_setup.sh
+      cd repo
+      chmod +x archroot_setup.sh
+    command: ./archroot_setup.sh
