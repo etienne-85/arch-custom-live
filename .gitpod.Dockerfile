@@ -1,4 +1,7 @@
 FROM archlinux
+RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+RUN cat /etc/locale.gen
+RUN locale-gen
 RUN pacman -Syyu
 RUN pacman -S --needed sudo vim zsh git base-devel htop
 # RUN pacman -S zip unzip bash-completion \
