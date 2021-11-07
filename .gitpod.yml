@@ -8,5 +8,7 @@ tasks:
     init: |
       wget http://mir.archlinux.fr/iso/2021.11.01/archlinux-bootstrap-2021.11.01-x86_64.tar.gz
       chmod +x ./repo/archroot_setup.sh
-    command: bash repo/archroot_setup.sh archlinux-bootstrap-2021.11.01-x86_64.tar.gz
+      mkdir /workspace/archroot
+      sudo tar xzf $FILE -C /workspace/archroot
+    command: bash repo/archroot_setup.sh /workspace/archroot
  # wget https://raw.githubusercontent.com/etienne1911/arch-custom-live/main/archroot_setup.sh
