@@ -6,7 +6,8 @@ workspaceLocation: "."
 tasks:
   - name: archroot setup
     init: |
-      cd repo
-      chmod +x archroot_setup.sh
-    command: ./archroot_setup.sh
+      wget http://mir.archlinux.fr/iso/2021.11.01/archlinux-bootstrap-2021.11.01-x86_64.tar.gz
+      mv archlinux-bootstrap-2021.11.01-x86_64.tar.gz archimg.tar.gz
+      chmod +x ./repo/archroot_setup.sh
+    command: bash repo/archroot_setup.sh archimg.tar.gz
  # wget https://raw.githubusercontent.com/etienne1911/arch-custom-live/main/archroot_setup.sh
