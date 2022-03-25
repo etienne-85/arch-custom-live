@@ -1,8 +1,10 @@
-set -o errexit -o pipefail -o nounset
+echo "entry point reached"
 
-echo '::group::Creating builder user'
-useradd --create-home --shell /bin/bash builder
-passwd --delete builder
-echo '::endgroup::'
+# set -o errexit -o pipefail -o nounset
 
-exec runuser builder --command 'bash -l -c /build.sh'
+# echo '::group::Creating builder user'
+# useradd --create-home --shell /bin/bash builder
+# passwd --delete builder
+# echo '::endgroup::'
+
+# exec runuser builder --command 'bash -l -c /build.sh'
