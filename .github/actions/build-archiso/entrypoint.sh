@@ -8,4 +8,6 @@ useradd --create-home --shell /bin/bash builder
 passwd --delete builder
 echo '::endgroup::'
 
-exec runuser builder --command 'bash -l -c /build.sh'
+pwd && ls -la && whoami
+# exec runuser builder --command 'bash -l -c /build.sh'
+exec bash -l -c /build.sh

@@ -5,7 +5,7 @@ set -o errexit -o pipefail -o nounset
 
 # inputvar=$INPUT_TEST
 
-export HOME=/home/builder
+# export HOME=/home/builder
 
 echo '::group::Setup build env'
 pwd && ls -la
