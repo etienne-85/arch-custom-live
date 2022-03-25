@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "entry point reached"
 
 # set -o errexit -o pipefail -o nounset
