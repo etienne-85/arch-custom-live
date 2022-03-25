@@ -11,7 +11,7 @@ echo '::group::Setup build env'
 pwd && ls -la
 whoami && ls -la /home
 # pacman -Syu
-wget http://mir.archlinux.fr/iso/latest/archlinux-bootstrap-2022.03.01-x86_64.tar.gz
+wget -q http://mir.archlinux.fr/iso/latest/archlinux-bootstrap-2022.03.01-x86_64.tar.gz
 # chmod +x ./repo/archroot_setup.sh
 mkdir archroot
 sudo tar xzf archlinux-bootstrap-2021.11.01-x86_64.tar.gz -C archroot
