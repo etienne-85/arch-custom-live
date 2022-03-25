@@ -1,16 +1,18 @@
-name: Arch iso CI build
+name: Arch live iso CI build
 
 on: [push]
 
 jobs:
-  docker_build:
-    name: Build iso in docker container
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
+  build_iso:
+    name: Build arch live iso
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      pwd && ls -la
-      pacman -Syu
+      - name: Build iso in docker container
+        uses: etienne1911/arch-custom-live #@<TAG> # replace with a tag from repo
+        with:
+          inputvar: "test input var"
 
   # setup_test:
   #   name: Publish archiso built image
