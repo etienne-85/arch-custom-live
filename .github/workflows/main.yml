@@ -10,7 +10,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Build iso in docker container
-        uses: etienne1911/arch-custom-live #@<TAG> # replace with a tag from repo
+        uses:  ./.github/actions/build-archiso #@<TAG> # replace with a tag from repo
         with:
           inputvar: "test input var"
 
