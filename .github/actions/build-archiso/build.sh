@@ -9,6 +9,7 @@ export HOME=/home/builder
 
 echo '::group::Setup build env'
 pwd && ls -la
+pacman -Syu
 # wget http://mir.archlinux.fr/iso/latest/archlinux-bootstrap-2022.03.01-x86_64.tar.gz
 # chmod +x ./repo/archroot_setup.sh
 # mkdir /workspace/archroot
