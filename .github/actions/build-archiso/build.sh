@@ -3,13 +3,13 @@
 
 set -o errexit -o pipefail -o nounset
 
-inputvar=$INPUT_TEST
+# inputvar=$INPUT_TEST
 
 export HOME=/home/builder
 
 echo '::group::Setup build env'
 pwd && ls -la
-# wget http://mir.archlinux.fr/iso/2021.11.01/archlinux-bootstrap-2021.11.01-x86_64.tar.gz
+# wget http://mir.archlinux.fr/iso/latest/archlinux-bootstrap-2022.03.01-x86_64.tar.gz
 # chmod +x ./repo/archroot_setup.sh
 # mkdir /workspace/archroot
 # sudo tar xzf archlinux-bootstrap-2021.11.01-x86_64.tar.gz -C /workspace/archroot
