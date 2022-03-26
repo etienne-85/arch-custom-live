@@ -8,9 +8,9 @@ pwd && ls -la && whoami
 # wget -q $ISO_URL && mkdir archroot && tar xzf archlinux-bootstrap-2022.03.01-x86_64.tar.gz -C archroot
 # ls -la && ls -la archroot
 # create custom profile from releng
-mkdir custom_profile
+# mkdir custom_profile
 cp -r /usr/share/archiso/configs/releng/ custom_profile/
-ls -lR
+# ls -lR
 # cat /etc/resolv.conf
 # sudo cp /etc/resolv.conf /workspace/archroot/root.x86_64/etc
 # echo "Server = http://mir.archlinux.fr/\$repo/os/\$arch" | sudo tee -a /workspace/archroot/root.x86_64/etc/pacman.d/mirrorlist
