@@ -18,6 +18,6 @@ cp -r /usr/share/archiso/configs/releng/ custom_profile/
 # cd /tmp/local-repo
 # build image
 # mkarchiso -v -w build -o out profile/
-mkarchiso -v custom_profile/
+mkarchiso -v -w /tmp/archiso-tmp custom_profile/
 ls -la
 echo '::endgroup::'
