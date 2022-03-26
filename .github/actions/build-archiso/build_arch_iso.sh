@@ -1,11 +1,5 @@
 #!/bin/bash
-# shellcheck disable=SC2024
-
-set -o errexit -o pipefail -o nounset
-
 # inputvar=$INPUT_TEST
-
-# export HOME=/home/builder
 
 echo '::group::Setup build env'
 pwd && ls -la && whoami 
