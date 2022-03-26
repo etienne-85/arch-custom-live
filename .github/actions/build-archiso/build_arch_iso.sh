@@ -10,6 +10,7 @@ pwd && ls -la && whoami
 # create custom profile from releng
 mkdir custom_profile
 cp -r /usr/share/archiso/configs/releng/ custom_profile/
+ls -lR
 # cat /etc/resolv.conf
 # sudo cp /etc/resolv.conf /workspace/archroot/root.x86_64/etc
 # echo "Server = http://mir.archlinux.fr/\$repo/os/\$arch" | sudo tee -a /workspace/archroot/root.x86_64/etc/pacman.d/mirrorlist
