@@ -9,6 +9,6 @@ RUN pacman -S --noconfirm --needed --overwrite '*' \
       wget archiso
 
 COPY entrypoint.sh /entrypoint.sh
-COPY build.sh /build.sh
+COPY build_arch_iso.sh /build_arch_iso.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
